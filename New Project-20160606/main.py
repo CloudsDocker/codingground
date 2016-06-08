@@ -58,3 +58,23 @@ sum = lambda arg1, arg2 : arg1+arg2;
 
 # now call
 print "value of total: ", sum(10,30)
+
+
+# test dir function, list functions in the module
+import math
+
+thePath=dir(math)
+
+print thePath
+
+print "############  file opertaion #################"
+fo=open("tod.tmp","w+")
+fo.write("python is a good langulage\n")
+fo.write("definitely\n")
+fo.close
+print "  write down   , file name is: ", fo.name
+fo=open("tod.tmp","r+")
+str=fo.read()
+print " the content are \n"
+print str
+fo.close()
